@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KANDI6</title>
+	<style>
+	
+		
+		.slider_img{
+		margin:8px
+	}
+	
+		.logo{
+			position: inherit;
+		}
+	
+	
+	/* Slideshow container */
+.slideshow-container {
+  max-width: 570px;
+  position:relative;
+  margin:inherit;
+	margin-left: 50px;
+	margin-top: 10px;
+	border:outset;
+	border-width: 4px;
+	border-color:black;
+}
+	/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+	.next, .next2{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+	
+	/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+	/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+	/* Number text (1/3 etc) */
+.numbertext {
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+	/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+	
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+	
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}	
+	
+	/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+		body{
+		background:rgba(83, 51, 237, 1);
+		 margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+		.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0, 0.5);
+		
+		
+}
+
+.topnav a {
+  float:left;
+	position: relative;
+	left:50px; 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+	
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+		.container {
+  position: relative;
+  width: 100%;
+}
+		.container2 {
+  position: relative;
+			
+  width: 100%;
+}
+.container3 {
+  position: relative;
+	
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.overlay1 {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 90px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container2:hover .overlay1 {
+  opacity: 1;
+}
+		.container3:hover .overlay {
+  opacity: 1;
+}
+		.pic{
+			margin:50px;
+			border:outset;
+			border-color:black;
+			position: relative;
+			width:100%;
+		}
+	
+		.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+		
+		.column {
+  float:left ;
+  width: 30%;
+  padding: 8px;
+}
+		p{
+			color:white;
+			Font-size: 20px;
+			position: relative;
+			margin:50px;
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body>
+	
+	<div class="topnav">
+		<a  href="https://wilberg675.github.io/KANDI.github.io/KANDI1">Home</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI2">What Is Mental Health?</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI3">Common mental health disorders</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI4">Recovery</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI5">Early signs</a>
+		<a class="active" href="https://wilberg675.github.io/KANDI.github.io/KANDI6">Myths and Facts</a>
+		
+</div>
+	
+<div style="padding-left:16px">
+
+  
+	<center>
+	<img class="logo" src="file:///C:/Users/Wilber/OneDrive/Documents/Host/56f4a9c37ac3f2f07a0e43e1454362f5.webp">
+	</center>
+	
+</div>
+	
+	
+	
+	<br></br>
+	<p>
+Myth: Mental health problems don't affect me.
+		<br></br>
+Fact: Mental health problems are actually very common. In 2014, about:
+<br></br>
+
+One in five American adults experienced a mental health issue
+One in 10 young people experienced a period of major depression
+One in 25 Americans lived with a serious mental illness, such as schizophrenia, bipolar disorder, or major depression
+Suicide is the 10th leading cause of death in the United States. It accounts for the loss of more than 41,000 American lives each year, more than double the number of lives lost to homicide. Learn more about mental health problems.
+
+Myth: Children don't experience mental health problems.
+Fact: Even very young children may show early warning signs of mental health concerns. These mental health problems are often clinically diagnosable, and can be a product of the interaction of biological, psychological, and social factors.
+
+Half of all mental health disorders show first signs before a person turns 14 years old, and three quarters of mental health disorders begin before age 24.
+
+Unfortunately, less than 20% of children and adolescents with diagnosable mental health problems receive the treatment they need. Early mental health support can help a child before problems interfere with other developmental needs.
+
+Myth: People with mental health problems are violent and unpredictable.
+Fact: The vast majority of people with mental health problems are no more likely to be violent than anyone else. Most people with mental illness are not violent and only 3%–5% of violent acts can be attributed to individuals living with a serious mental illness. In fact, people with severe mental illnesses are over 10 times more likely to be victims of violent crime than the general population. You probably know someone with a mental health problem and don't even realize it, because many people with mental health problems are highly active and productive members of our communities.
+
+Myth: People with mental health needs, even those who are managing their mental illness, cannot tolerate the stress of holding down a job.
+Fact: People with mental health problems are just as productive as other employees. Employers who hire people with mental health problems report good attendance and punctuality as well as motivation, good work, and job tenure on par with or greater than other employees.
+
+When employees with mental health problems receive effective treatment, it can result in:
+
+Lower total medical costs
+Increased productivity
+Lower absenteeism
+Decreased disability costs
+Myth: Personality weakness or character flaws cause mental health problems. People with mental health problems can snap out of it if they try hard enough.
+Fact: Mental health problems have nothing to do with being lazy or weak and many people need help to get better. Many factors contribute to mental health problems, including:
+
+Biological factors, such as genes, physical illness, injury, or brain chemistry
+Life experiences, such as trauma or a history of abuse
+Family history of mental health problems
+People with mental health problems can get better and many recover completely.
+
+Helping Individuals with Mental Health Problems
+Myth: There is no hope for people with mental health problems. Once a friend or family member develops mental health problems, he or she will never recover.
+Fact: Studies show that people with mental health problems get better and many recover completely. Recovery refers to the process in which people are able to live, work, learn, and participate fully in their communities. There are more treatments, services, and community support systems than ever before, and they work.
+
+Myth: Therapy and self-help are a waste of time. Why bother when you can just take a pill?
+Fact: Treatment for mental health problems varies depending on the individual and could include medication, therapy, or both. Many individuals work with a support system during the healing and recovery process.
+
+
+	</p>
+	
+</body>
+</html>

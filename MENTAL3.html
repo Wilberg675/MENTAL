@@ -1,0 +1,323 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KANDI3</title>
+	<style>
+	
+		
+		.slider_img{
+		margin:8px
+	}
+	
+		.logo{
+			position: inherit;
+		}
+	
+	
+	/* Slideshow container */
+.slideshow-container {
+  max-width: 570px;
+  position:relative;
+  margin:inherit;
+	margin-left: 50px;
+	margin-top: 10px;
+	border:outset;
+	border-width: 4px;
+	border-color:black;
+}
+	/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+	.next, .next2{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+	
+	/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+	/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+	/* Number text (1/3 etc) */
+.numbertext {
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+	/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+	
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+	
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}	
+	
+	/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+		body{
+		background:rgba(83, 51, 237, 1);
+		 margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+		.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0, 0.5);
+		
+		
+}
+
+.topnav a {
+  float:left;
+	position: relative;
+	left:50px; 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+	
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+		.container {
+  position: relative;
+  width: 100%;
+}
+		.container2 {
+  position: relative;
+			
+  width: 100%;
+}
+.container3 {
+  position: relative;
+	
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.overlay1 {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 90px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container2:hover .overlay1 {
+  opacity: 1;
+}
+		.container3:hover .overlay {
+  opacity: 1;
+}
+		.pic{
+			margin:50px;
+			border:outset;
+			border-color:black;
+			position: relative;
+			width:100%;
+		}
+	
+		p{
+			color:white;
+			Font-size: 20px;
+			position: relative;
+			margin:50px;
+			text-align: center;
+		}
+		.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+		
+		.column {
+  float:left ;
+  width: 30%;
+  padding: 8px;
+}
+	</style>
+</head>
+
+<body>
+	
+	<div class="topnav">
+		<a  href="https://wilberg675.github.io/KANDI.github.io/KANDI1">Home</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI2">What Is Mental Health?</a>
+  <a class="active" href="https://wilberg675.github.io/KANDI.github.io/KANDI3">Common mental health disorders</a>
+  <a href="https://wilberg675.github.io/KANDI.github.io/KANDI4">Recovery</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI5">Early signs</a>
+		<a href="https://wilberg675.github.io/KANDI.github.io/KANDI6">Myths and Facts</a>
+		
+		
+</div>
+	<p> The most common types of mental illness are as follows:
+		<br></br>
+
+anxiety disorders
+mood disorders
+schizophrenia disorders
+Anxiety disorders
+According to the Anxiety and Depression Association of America, anxiety disorders are the most common type of mental illness.
+
+People with these conditions have severe fear or anxiety, which relates to certain objects or situations. Most people with an anxiety disorder will try to avoid exposure to whatever triggers their anxiety.
+
+Examples of anxiety disorders include:
+
+Generalized anxiety disorder (GAD)
+
+The American Psychiatric Association define GAD as disproportionate worry that disrupts everyday living.
+
+People might also experience physical symptoms, including
+
+restlessness
+fatigue
+tense muscles
+interrupted sleep
+A bout of anxiety symptoms does not necessarily need a specific trigger in people with GAD.
+
+They may experience excessive anxiety on encountering everyday situations that do not present a direct danger, such as chores or keeping appointments. A person with GAD may sometimes feel anxiety with no trigger at all.
+
+Find out more about GAD here.
+
+Panic disorders
+
+People with a panic disorder experience regular panic attacks, which involve sudden, overwhelming terror or a sense of imminent disaster and death.
+
+Read more about panic attacks here.
+
+Phobias
+
+There are different types of phobia:
+
+Simple phobias: These might involve a disproportionate fear of specific objects, scenarios, or animals. A fear of spiders is a common example. Learn more about simple phobias here.
+Social phobia: Sometimes known as social anxiety, this is a fear of being subject to the judgment of others. People with social phobia often restrict their exposure to social environments. Find out more here.
+Agoraphobia: This term refers to a fear of situations in which getting away may be difficult, such as being in an elevator or moving train. Many people misunderstand this phobia as a fear of being outside. Read all about agoraphobia here.
+Phobias are deeply personal, and doctors do not know every type. There could be thousands of phobias, and what might seem unusual to one person may be a severe problem that dominates daily life for another.
+
+Obsessive-compulsive disorder (OCD)
+
+People with OCD have obsessions and compulsions. In other words, they experience constant, stressful thoughts and a powerful urge to perform repetitive acts, such as hand washing.
+
+Find out more about OCD here.
+
+Post-traumatic stress disorder (PTSD)
+
+PTSD can occur after a person experiences or witnesses a deeply stressful or traumatic event.
+
+During this type of event, the person thinks that their life or other people’s lives are in danger. They may feel afraid or that they have no control over what is happening.
+
+These sensations of trauma and fear may then contribute to PTSD.
+
+Discover how to recognize and treat PTSD.
+
+Mood disorders
+People may also refer to mood disorders as affective disorders or depressive disorders.
+
+People with these conditions have significant changes in mood, generally involving either mania, which is a period of high energy and elation, or depression. Examples of mood disorders include:
+
+Major depression: An individual with major depression experiences a constant low mood and loses interest in activities and events that they previously enjoyed. They can feel prolonged periods of sadness or extreme sadness.
+Bipolar disorder: A person with bipolar disorder experiences unusual changes in their mood, energy levels, levels of activity, and ability to continue with daily life. Periods of high mood are known as manic phases, while depressive phases bring on low mood. Read more about the different types of bipolar here.
+Seasonal affective disorder (SAD): Reduced daylight triggers during the fall, winter, and early spring months trigger this type of major depression. It is most common in countries far from the equator. Learn more about SAD here.
+Schizophrenia disorders
+Mental health authorities are still trying to determine whether schizophrenia is a single disorder or a group of related illnesses. It is a highly complex condition.
+
+Signs of schizophrenia typically develop between the ages of 16 and 30 years, according to the NIMH. The individual will have thoughts that appear fragmented, and they may also find it hard to process information.
+
+Schizophrenia has negative and positive symptoms. Positive symptoms include delusions, thought disorders, and hallucinations. Negative symptoms include withdrawal, lack of motivation, and a flat or inappropriate mood.</p>
+	
+
+
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>KANDI2</title>
+	<style>
+	
+		
+		.slider_img{
+		margin:8px
+	}
+	
+		.logo{
+			position: inherit;
+		}
+	
+	
+	/* Slideshow container */
+.slideshow-container {
+  max-width: 570px;
+  position:relative;
+  margin:inherit;
+	margin-left: 50px;
+	margin-top: 10px;
+	border:outset;
+	border-width: 4px;
+	border-color:black;
+}
+	/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+	.next, .next2{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+	
+	/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+	/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+	/* Number text (1/3 etc) */
+.numbertext {
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+	/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+	
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+	
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}	
+	
+	/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+		body{
+		background:rgba(83, 51, 237, 1);
+		 margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+		.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0, 0.5);
+		
+		
+}
+
+.topnav a {
+  float:left;
+	position: relative;
+	left:50px; 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+	
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+		.container {
+  position: relative;
+  width: 100%;
+}
+		.container2 {
+  position: relative;
+			
+  width: 100%;
+}
+.container3 {
+  position: relative;
+	
+  width: 100%;
+}
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 80px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.overlay1 {
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  left: 90px;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0, 0.5);
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+.container2:hover .overlay1 {
+  opacity: 1;
+}
+		.container3:hover .overlay {
+  opacity: 1;
+}
+		.pic{
+			margin:50px;
+			border:outset;
+			border-color:black;
+			position: relative;
+			width:100%;
+		}
+		p{
+			color:white;
+			Font-size: 20px;
+			position: relative;
+			margin:50px;
+			text-align: center;
+		}
+		.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+		
+		.column {
+  float:inherit ;
+  width: 90%;
+  padding: 8px;
+}
+	</style>
+</head>
+
+<body>
+	
+	<div class="topnav">
+			<a  href="https://wilberg675.github.io/KANDI.github.io/KANDI1">Home</a>
+  <a class="active" href="https://wilberg675.github.io/KANDI.github.io/KANDI2">What Is Mental Health?</a>
+  <a href="https://wilberg675.github.io/KANDI.github.io/KANDI3">Common mental health disorders</a>
+  <a href="https://wilberg675.github.io/KANDI.github.io/KANDI4">Recovery</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI5">Early signs</a>
+		<a href="https://wilberg675.github.io/KANDI.github.io/KANDI6">Myths and Facts</a>
+		
+</div>
+	
+<div style="padding-left:16px">
+  
+	<center>
+	<img class="logo" src="file:///C:/Users/Wilber/OneDrive/Documents/Host/56f4a9c37ac3f2f07a0e43e1454362f5.webp">
+	</center>
+	
+</div>
+	
+	<p> Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
+		<br></br>
+Over the course of your life, if you experience mental health problems, your thinking, mood, and behavior could be affected. Many factors contribute to mental health problems, including:
+	<br></br>
+Biological factors, such as genes or brain chemistry
+Life experiences, such as trauma or abuse
+Family history of mental health problems
+Mental health problems are common but help is available. People with mental health problems can get better and many recover completely.</p>
+	
+</body>
+</html>

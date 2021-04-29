@@ -1,0 +1,249 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CAR</title>
+	<style>
+	
+		
+		.slider_img{
+		margin:8px
+	}
+	
+		.logo{
+			position: inherit;
+		}
+	
+	
+	/* Slideshow container */
+.slideshow-container {
+  max-width: 570px;
+  position:relative;
+  margin:inherit;
+	margin-left: 50px;
+	margin-top: 10px;
+	border:outset;
+	border-width: 4px;
+	border-color:black;
+}
+	/* Next & previous buttons */
+.prev, .next{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+	.next, .next2{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+	
+	/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover, .prev2:hover, .next2:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+	/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+	/* Number text (1/3 etc) */
+.numbertext {
+  color:black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+	/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+	
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+	
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}	
+	
+	/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+		body{
+		background:rgba(83, 51, 237, 1);
+		 margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+	}
+	
+		.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0, 0.5);
+		
+		
+}
+
+.topnav a {
+  float:left;
+	position: relative;
+	left:50px; 
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+	
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+	
+	</style>
+</head>
+
+<body>
+	
+	<div class="topnav">
+		<a class="active" href="https://wilberg675.github.io/KANDI.github.io/KANDI1">Home</a>
+  <a href="https://wilberg675.github.io/KANDI.github.io/KANDI2">What Is Mental Health?</a>
+  <a href="https://wilberg675.github.io/KANDI.github.io/KANDI3">Common mental health disorders</a>
+  <a href="https://wilberg675.github.io/KANDI.github.io/KANDI4">Recovery</a>
+  <a  href="https://wilberg675.github.io/KANDI.github.io/KANDI5">Early signs</a>
+		<a href="https://wilberg675.github.io/KANDI.github.io/KANDI6">Myths and Facts</a>
+		
+		
+</div>
+	
+<div style="padding-left:16px">
+  
+	<center>
+	<img class="logo" src="file:///C:/Users/Wilber/OneDrive/Documents/Host/56f4a9c37ac3f2f07a0e43e1454362f5.webp">
+	</center>
+	
+</div>
+	
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="file:///C:/Users/Wilber/OneDrive/Documents/Host/worldmentalhealthday_16x9.jpg" style="width:100%" >
+  <div class="text">View Details On our New K23!</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="file:///C:/Users/Wilber/OneDrive/Documents/Host/3._courtesy_mymindourhumanity_campaign.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="file:///C:/Users/Wilber/OneDrive/Documents/Host/definition-of-mental-illness-4587855-v1-cd7f9f37c61c49099ac8ede282db1e73.png" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="padding-left: 300px">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+	
+	<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+	
+	
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+	
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+	
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+	
+	
+	
+  if (n > slides.length) {slideIndex = 1}  
+	
+	
+  if (n < 1) {slideIndex = slides.length}
+ 
+	
+	
+	
+	
+	for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+	
+	
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+	
+</script>
+
+</body>
+</html>
